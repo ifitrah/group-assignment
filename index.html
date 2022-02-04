@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Home | Muloo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo" target="_blank">Muloo</a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="social.html">Social Media</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">MULOO</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="images/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2></h2>
+        <p>Assalamualaikum and Great Day Everyone!<br><br>
+
+            <p>Muloo is a professional photography studio located in Bandar Seri Putra Bangi, Kajang that will provide photography services for students, graduates, families, weddings, and any type of event and program. Run by professional photographers Ilham Fitrah and Iman Hatija, his unique skill set and years of experience have enabled him to become a highly recommended independent photographer in the area. They have decided to open a retail location to expand its list of services and provide school portrait photos, senior graduation portraits, and business head photos. Muloo will be located in the center of the retail lane at Bandar Seri Putra Bangi, Kajang which has a high traffic exposure and can be seen by the public.
+            </p>
+        
+            <br><p>Today we will bring you all together in getting yo know and explore in more depth the world
+                of photography. First, let's gain knowledge on what photography actually is.
+            </p>
+
+            <br><p>Photography is the art of capturing light with a camera, usually through a digital sensor or film,
+                to create an image. With the right camera equipment, you can also take pictures of wavelengths of light
+                that are invisible to the human eye, including UV light, infrared, and radio.
+            </p>
+
+        <br><p>The first permanent photograph was taken in 1826, by Joseph Nicéphore Niépce in France. 
+            It shows the roof of a building illuminated by the sun.</p>
+        </p>
+        <div style="text-align: center;">
+        <br><p>
+            <img src="images/index-01.jpeg">
+        </p>
+    </div>
+        </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+    <p style=text-align:center class="copyright"> &copy; Copyright All rights reserved.</p>
+</body>
+</html>
